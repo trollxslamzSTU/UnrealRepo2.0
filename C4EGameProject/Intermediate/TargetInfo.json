@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "C4EGameProject",
+			"Path": "C:\\Users\\l021011n.STUDENT.002\\Documents\\Unreal Projects\\C4EGameProject\\Source\\C4EGameProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "C4EGameProjectEditor",
+			"Path": "C:\\Users\\l021011n.STUDENT.002\\Documents\\Unreal Projects\\C4EGameProject\\Source\\C4EGameProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

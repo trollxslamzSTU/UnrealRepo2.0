@@ -1,0 +1,23 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-C4EGameProject.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProject.init.gen.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProjectCharacter.gen.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProjectGameMode.gen.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProjectProjectile.gen.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\TP_PickUpComponent.gen.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\TP_WeaponComponent.gen.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProject.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProjectCharacter.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProjectGameMode.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProjectProjectile.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\TP_PickUpComponent.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\TP_WeaponComponent.cpp.obj"
+"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\Default.rc2.res"
+/OUT:"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\UnrealEditor-C4EGameProject.lib"
