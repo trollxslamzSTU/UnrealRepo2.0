@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\weapon_hitscan.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\c4egameprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\c4egameproject\\definitions.c4egameproject.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\weapon_hitscan.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\weapon_base.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\fireable.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\fireable.generated.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\weapon_base.generated.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\weapon_hitscan.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

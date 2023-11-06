@@ -5,6 +5,7 @@
 #include "GameFramework/Character.h"
 #include "C4ECharacter.generated.h"
 
+class USceneComponent;
 class UInputAction;
 class UCameraComponent;
 class UInputMappingContext;
