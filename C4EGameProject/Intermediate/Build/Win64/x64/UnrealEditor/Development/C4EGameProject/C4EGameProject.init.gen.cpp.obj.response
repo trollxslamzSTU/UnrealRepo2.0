@@ -1,18 +1,16 @@
-"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\UnrealEditor\Inc\C4EGameProject\UHT\C4EGameProject.init.gen.cpp"
+C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\UnrealEditor\Inc\C4EGameProject\UHT\C4EGameProject.init.gen.cpp
 /I .
-/I "C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\UnrealEditor\Inc\C4EGameProject\UHT"
-/I "C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Source"
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I Runtime
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\UHT
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore\UHT
 /I Runtime\Net\Core\Classes
 /I Runtime\Net\Core\Public
@@ -274,6 +272,8 @@
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
+/I C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\UnrealEditor\Inc\C4EGameProject\UHT
+/I C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Source
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality\UHT
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh\UHT
@@ -290,12 +290,12 @@
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
-/FI"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
-/FI"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\Definitions.C4EGameProject.h"
-/Yu"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
-/Fp"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.pch"
-/Fo"C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProject.init.gen.cpp.obj"
-/sourceDependencies "C:\Users\l021011n.STUDENT.002\Documents\Unreal Projects\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProject.init.gen.cpp.dep.json"
+/FI"C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
+/FI"C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\Definitions.C4EGameProject.h"
+/Yu"C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
+/Fp"C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\x64\C4EGameProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.pch"
+/Fo"C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProject.init.gen.cpp.obj"
+/sourceDependencies C:\Users\l021011n.STUDENT.002\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\C4EGameProject\C4EGameProject.init.gen.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi
