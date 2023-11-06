@@ -1,6 +1,7 @@
 #include "C4ECharacter.h"
 
 #include "EnhancedInputComponent.h"
+#include "Fireable.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 
@@ -20,6 +21,15 @@ AC4ECharacter::AC4ECharacter()
 void AC4ECharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	if(_DefaultWeapon)
+	{
+		FActorSpawnParameters spawnParams;
+		spawnParams.Owner = this;
+		spawnParams.Instigator = this;
+		TObjectPtr<AActor> spawnedGun = GetWorld()()->SpawnActor(_DefaultWeapon, &_WeaponAttachPoint->GetComponentTransform(), spawnParams);
+		
+	}
 }
 
 void AC4ECharacter::Move(const FInputActionValue& Value)
@@ -46,6 +56,10 @@ void AC4ECharacter::Look(const FInputActionValue& Value)
 
 void AC4ECharacter::Shoot()
 {
+	if(_FireableRef)
+	{
+		IFireable::Execute_Fire(_FireableRef);
+	}
 }
 
 void AC4ECharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
