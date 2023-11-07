@@ -21,8 +21,47 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacter() {}
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_C4EGameProject();
 // End Cross Module References
+	DEFINE_FUNCTION(AC4ECharacter::execInit)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Init_Implementation();
+		P_NATIVE_END;
+	}
+	static FName NAME_AC4ECharacter_Init = FName(TEXT("Init"));
+	void AC4ECharacter::Init()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AC4ECharacter_Init),NULL);
+	}
 	void AC4ECharacter::StaticRegisterNativesAC4ECharacter()
 	{
+		UClass* Class = AC4ECharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Init", &AC4ECharacter::execInit },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AC4ECharacter_Init_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AC4ECharacter_Init_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "C4ECharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AC4ECharacter_Init_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AC4ECharacter, nullptr, "Init", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AC4ECharacter_Init_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AC4ECharacter_Init_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AC4ECharacter_Init()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AC4ECharacter_Init_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AC4ECharacter);
 	UClass* Z_Construct_UClass_AC4ECharacter_NoRegister()
@@ -32,6 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacter() {}
 	struct Z_Construct_UClass_AC4ECharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -78,6 +118,9 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacter() {}
 	UObject* (*const Z_Construct_UClass_AC4ECharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_C4EGameProject,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AC4ECharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AC4ECharacter_Init, "Init" }, // 792193374
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC4ECharacter_Statics::Class_MetaDataParams[] = {
@@ -177,11 +220,11 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AC4ECharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AC4ECharacter_Statics::PropPointers),
 		0,
 		0x009000A5u,
@@ -206,9 +249,9 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AC4ECharacter, AC4ECharacter::StaticClass, TEXT("AC4ECharacter"), &Z_Registration_Info_UClass_AC4ECharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4ECharacter), 3657717446U) },
+		{ Z_Construct_UClass_AC4ECharacter, AC4ECharacter::StaticClass, TEXT("AC4ECharacter"), &Z_Registration_Info_UClass_AC4ECharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4ECharacter), 2375525103U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_814930084(TEXT("/Script/C4EGameProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_2214290782(TEXT("/Script/C4EGameProject"),
 		Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

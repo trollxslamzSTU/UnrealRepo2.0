@@ -15,9 +15,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define C4EGAMEPROJECT_C4ECharacter_generated_h
 
 #define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_SPARSE_DATA
-#define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_RPC_WRAPPERS
-#define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_RPC_WRAPPERS \
+	virtual void Init_Implementation(); \
+ \
+	DECLARE_FUNCTION(execInit);
+
+
+#define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Init_Implementation(); \
+ \
+	DECLARE_FUNCTION(execInit);
+
+
 #define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_ACCESSORS
+#define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_CALLBACK_WRAPPERS
 #define FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAC4ECharacter(); \
@@ -69,6 +80,7 @@ public: \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_SPARSE_DATA \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_RPC_WRAPPERS \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_ACCESSORS \
+	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_CALLBACK_WRAPPERS \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_INCLASS \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_STANDARD_CONSTRUCTORS \
 public: \
@@ -81,6 +93,7 @@ public: \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_SPARSE_DATA \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_ACCESSORS \
+	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_CALLBACK_WRAPPERS \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_INCLASS_NO_PURE_DECLS \
 	FID_C4EGameProject_Source_C4EGameProject_C4ECharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \

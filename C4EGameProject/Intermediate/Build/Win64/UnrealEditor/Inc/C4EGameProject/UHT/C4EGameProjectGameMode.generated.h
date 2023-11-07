@@ -15,15 +15,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define C4EGAMEPROJECT_C4EGameProjectGameMode_generated_h
 
 #define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_SPARSE_DATA
-#define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_RPC_WRAPPERS
-#define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDecreaseCountdown);
+
+
+#define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDecreaseCountdown);
+
+
 #define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_ACCESSORS
 #define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAC4EGameProjectGameMode(); \
 	friend struct Z_Construct_UClass_AC4EGameProjectGameMode_Statics; \
 public: \
-	DECLARE_CLASS(AC4EGameProjectGameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/C4EGameProject"), C4EGAMEPROJECT_API) \
+	DECLARE_CLASS(AC4EGameProjectGameMode, AGameMode, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/C4EGameProject"), C4EGAMEPROJECT_API) \
 	DECLARE_SERIALIZER(AC4EGameProjectGameMode)
 
 
@@ -32,14 +40,14 @@ private: \
 	static void StaticRegisterNativesAC4EGameProjectGameMode(); \
 	friend struct Z_Construct_UClass_AC4EGameProjectGameMode_Statics; \
 public: \
-	DECLARE_CLASS(AC4EGameProjectGameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/C4EGameProject"), C4EGAMEPROJECT_API) \
+	DECLARE_CLASS(AC4EGameProjectGameMode, AGameMode, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/C4EGameProject"), C4EGAMEPROJECT_API) \
 	DECLARE_SERIALIZER(AC4EGameProjectGameMode)
 
 
 #define FID_C4EGameProject_Source_C4EGameProject_C4EGameProjectGameMode_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	C4EGAMEPROJECT_API AC4EGameProjectGameMode(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AC4EGameProjectGameMode) \
+	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AC4EGameProjectGameMode) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(C4EGAMEPROJECT_API, AC4EGameProjectGameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AC4EGameProjectGameMode); \
 private: \
@@ -58,7 +66,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(C4EGAMEPROJECT_API, AC4EGameProjectGameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AC4EGameProjectGameMode); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AC4EGameProjectGameMode) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AC4EGameProjectGameMode) \
 	C4EGAMEPROJECT_API virtual ~AC4EGameProjectGameMode();
 
 

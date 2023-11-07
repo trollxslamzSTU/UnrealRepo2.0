@@ -84,6 +84,12 @@
     <ClInclude Include="..\..\Source\C4EGameProject\Fireable.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\MatchStateHandler.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\MatchStateHandler.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\TP_PickUpComponent.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
@@ -100,6 +106,18 @@
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C4EGameProject\Weapon_Base.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Weapon_Hitscan.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Weapon_Hitscan.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Weapon_Projectile.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Weapon_Projectile.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_WeaponProjectile.uasset",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_C4ECharacter.uasset",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/FirstPerson/Input/IMC_Default.uasset",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/FirstPerson/Blueprints/BP_GameModeBase.uasset",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_WeaponHitscan.uasset",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/FirstPerson/Maps/FirstPersonMap.umap",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/FirstPerson/Blueprints/BP_GameMode.uasset",
+				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_PlayerController.uasset",
 				"C:/Users/l021011n.STUDENT.002/Documents/Unreal Projects/C4EGameProject/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
 			]
 		}

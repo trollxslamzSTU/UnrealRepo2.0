@@ -40,10 +40,11 @@ class C4EGAMEPROJECT_API AC4ECharacter : public ACharacter
 public:
 	AC4ECharacter();
 	
-	
+	UFUNCTION(BlueprintNativeEvent)
+	void Init();
 	
 protected:
-	virtual void BeginPlay() override;
+	
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 	TSubclassOf<AWeapon_Base> _DefaultWeapon;

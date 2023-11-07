@@ -19,12 +19,10 @@ AC4ECharacter::AC4ECharacter()
 
 	_WeaponAttachPoint = CreateDefaultSubobject<USceneComponent>(TEXT("AttachPoint"));
 	_WeaponAttachPoint->SetupAttachment(_Camera);
-}	
+}
 
-void AC4ECharacter::BeginPlay()
+void AC4ECharacter::Init_Implementation()
 {
-	Super::BeginPlay();
-
 	if(_DefaultWeapon)
 	{
 		FActorSpawnParameters spawnParams;
@@ -35,14 +33,6 @@ void AC4ECharacter::BeginPlay()
 		if(UKismetSystemLibrary::DoesImplementInterface(spawnedGun, UFireable::StaticClass()))
 		{
 			_FireableRef = spawnedGun;
-		}
-	}
-
-	if(APlayerController* PlayerController = Cast<APlayerController>(Controller))
-	{
-		if(UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
-		{
-			Subsystem->AddMappingContext(PlayerMappingContext, 0);
 		}
 	}
 }
