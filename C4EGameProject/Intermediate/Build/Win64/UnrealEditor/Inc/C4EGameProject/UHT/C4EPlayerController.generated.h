@@ -14,22 +14,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define C4EGAMEPROJECT_C4EPlayerController_generated_h
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_SPARSE_DATA
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_RPC_WRAPPERS \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_SPARSE_DATA
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_RPC_WRAPPERS \
 	virtual void Init_Implementation(); \
  \
 	DECLARE_FUNCTION(execInit);
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Init_Implementation(); \
  \
 	DECLARE_FUNCTION(execInit);
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_ACCESSORS
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_CALLBACK_WRAPPERS
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_ACCESSORS
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_CALLBACK_WRAPPERS
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAC4EPlayerController(); \
 	friend struct Z_Construct_UClass_AC4EPlayerController_Statics; \
@@ -39,7 +39,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AC4EPlayerController*>(this); }
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_INCLASS \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAC4EPlayerController(); \
 	friend struct Z_Construct_UClass_AC4EPlayerController_Statics; \
@@ -49,7 +49,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AC4EPlayerController*>(this); }
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_STANDARD_CONSTRUCTORS \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AC4EPlayerController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AC4EPlayerController) \
@@ -63,7 +63,7 @@ public: \
 	NO_API virtual ~AC4EPlayerController();
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AC4EPlayerController(AC4EPlayerController&&); \
@@ -75,29 +75,29 @@ public: \
 	NO_API virtual ~AC4EPlayerController();
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_10_PROLOG
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_GENERATED_BODY_LEGACY \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_11_PROLOG
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_SPARSE_DATA \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_RPC_WRAPPERS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_ACCESSORS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_CALLBACK_WRAPPERS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_INCLASS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_STANDARD_CONSTRUCTORS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_SPARSE_DATA \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_RPC_WRAPPERS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_ACCESSORS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_CALLBACK_WRAPPERS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_INCLASS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_GENERATED_BODY \
+#define FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_SPARSE_DATA \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_ACCESSORS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_CALLBACK_WRAPPERS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_INCLASS_NO_PURE_DECLS \
-	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_13_ENHANCED_CONSTRUCTORS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_SPARSE_DATA \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_ACCESSORS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_CALLBACK_WRAPPERS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_INCLASS_NO_PURE_DECLS \
+	FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

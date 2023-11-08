@@ -2,11 +2,13 @@
 
 #include "C4ECharacter.h"
 #include "EnhancedInputSubsystems.h"
+#include "Widget_Score.h"
 #include "GameFramework/GameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 
 AC4EPlayerController::AC4EPlayerController() : Super()
 {
+	_Score = 0;
 }
 
 void AC4EPlayerController::Init_Implementation()
@@ -19,6 +21,12 @@ void AC4EPlayerController::Init_Implementation()
 	if(GetPawn() != nullptr)
 	{
 		GetPawn()->Destroy();
+	}
+
+	if(_ScoreWidgetClass)
+	{
+		_ScoreWidget = CreateWidget<UWidget_Score, AC4EPlayerController*>(this, _ScoreWidgetClass);
+		_ScoreWidget->AddToViewport();
 	}
 }
 
@@ -48,4 +56,13 @@ void AC4EPlayerController::Handle_MatchStart_Implementation()
 void AC4EPlayerController::Handle_End_Implementation()
 {
 	//SetInputMode(FInputModeUIOnly());
+}
+
+void AC4EPlayerController::AddScore(int Amount)
+{
+	_Score += Amount;
+	if(_ScoreWidget != nullptr)
+	{
+		_ScoreWidget->UpdateScore(_Score);
+	}
 }

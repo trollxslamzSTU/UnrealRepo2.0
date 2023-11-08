@@ -15,7 +15,17 @@
             "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
             "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
             "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
-            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h"
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

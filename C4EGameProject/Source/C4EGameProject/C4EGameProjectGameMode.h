@@ -6,6 +6,8 @@
 #include "GameFramework/GameMode.h"
 #include "C4EGameProjectGameMode.generated.h"
 
+class UGameRule;
+
 UCLASS(minimalapi, Abstract)
 class AC4EGameProjectGameMode : public AGameMode
 {
@@ -27,11 +29,20 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=MatchManagement)
 	int _CountDownTimer;
+	
+	int _GameRulesLeft;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TMap<TObjectPtr<UGameRule>, bool> _GameRuleManagers;
+	
 	FTimerHandle _TimerDecreaseCountdown;
 
 	UFUNCTION()
 	void DecreaseCountdown();
+	UFUNCTION()
+	void Handle_GameRuleCompleted(UGameRule* rule);
+	UFUNCTION()
+	void Handle_GameRulePointsScored(AController* scorer, int points);
 
 	virtual void BeginPlay() override;
 

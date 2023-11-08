@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UMatchStateHandler_NoRegister();
+	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UWidget_Score_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
@@ -77,6 +78,10 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp__PawnToSpawn;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__ScoreWidgetClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp__ScoreWidgetClass;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_DefaultMappingContext;
@@ -107,6 +112,13 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__PawnToSpawn = { "_PawnToSpawn", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4EPlayerController, _PawnToSpawn), Z_Construct_UClass_UClass, Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__PawnToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__PawnToSpawn_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__ScoreWidgetClass_MetaData[] = {
+		{ "Category", "C4EPlayerController" },
+		{ "ModuleRelativePath", "C4EPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__ScoreWidgetClass = { "_ScoreWidgetClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4EPlayerController, _ScoreWidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UWidget_Score_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__ScoreWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__ScoreWidgetClass_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
@@ -116,6 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0024080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4EPlayerController, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AC4EPlayerController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__PawnToSpawn,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__ScoreWidgetClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AC4EPlayerController_Statics::InterfaceParams[] = {
@@ -158,9 +171,9 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 2044000735U) },
+		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 3425735909U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1592704499(TEXT("/Script/C4EGameProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1039789817(TEXT("/Script/C4EGameProject"),
 		Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

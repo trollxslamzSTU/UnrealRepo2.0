@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\gamerule_targets.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\c4egameprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\c4egameproject\\definitions.c4egameproject.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\gamerule_targets.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\gamerule.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\gamerule.generated.h",
+            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\gamerule_targets.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

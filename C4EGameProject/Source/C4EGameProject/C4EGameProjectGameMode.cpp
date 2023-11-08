@@ -2,6 +2,7 @@
 
 #include "C4EGameProjectGameMode.h"
 #include "C4EPlayerController.h"
+#include "GameRule.h"
 #include "GameFramework/PlayerStart.h"
 #include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"
@@ -10,6 +11,7 @@ AC4EGameProjectGameMode::AC4EGameProjectGameMode()
 	: Super()
 {
 	_CountDownTimer = 3;
+	_GameRulesLeft = 0;
 }
 
 AActor* AC4EGameProjectGameMode::FindPlayerStart_Implementation(AController* Player, const FString& IncomingName)
@@ -59,9 +61,50 @@ void AC4EGameProjectGameMode::DecreaseCountdown()
 	}
 }
 
+void AC4EGameProjectGameMode::Handle_GameRuleCompleted(UGameRule* rule)
+{
+	if(*_GameRuleManagers.Find(rule)) { return; }
+
+	_GameRulesLeft--;
+	if(GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue,
+			FString::Printf(TEXT("GameRule Completed: %d Remaining"), _GameRulesLeft));
+	}
+	if(_GameRulesLeft != 0){ return; }
+
+	EndMatch();
+}
+
+void AC4EGameProjectGameMode::Handle_GameRulePointsScored(AController* scorer, int points)
+{
+	AC4EPlayerController* castedPC = Cast<AC4EPlayerController>(scorer);
+	if(castedPC)
+	{
+		castedPC->AddScore(points);
+	}
+}
+
 void AC4EGameProjectGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+	TArray<UActorComponent*> outComponents;
+	GetComponents(outComponents);
+	for(UActorComponent* comp : outComponents)
+	{
+		if(UGameRule* rule = Cast<UGameRule>(comp))
+		{
+			_GameRuleManagers.Add(rule, rule->_IsOptional);
+			rule->Init();
+			rule->OnGameRuleCompleted.AddDynamic(this, &AC4EGameProjectGameMode::Handle_GameRuleCompleted);
+			rule->OnGameRulePointsScored.AddDynamic(this, &AC4EGameProjectGameMode::Handle_GameRulePointsScored);
+			if(!rule->_IsOptional)
+			{
+				_GameRulesLeft++;
+			}
+		}
+	}
 }
 
 void AC4EGameProjectGameMode::HandleMatchIsWaitingToStart()

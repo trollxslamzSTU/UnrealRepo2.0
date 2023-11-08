@@ -4,7 +4,7 @@
 
 AWeapon_Hitscan::AWeapon_Hitscan()
 {
-	_Range = 300.f;
+	_Range = 1000.f;
 	_Damage = 25.f;
 }
 
@@ -22,10 +22,10 @@ bool AWeapon_Hitscan::Fire_Implementation()
 		EDrawDebugTrace::ForDuration, hit, true,
 		FLinearColor::Blue, FLinearColor::Green, 5))
 	{
-		/*UGameplayStatics::ApplyDamage(hit.GetActor(), _TypeData->_Damage,
+		UGameplayStatics::ApplyDamage(hit.GetActor(), _Damage,
 			GetInstigatorController(), this,
 			UDamageType::StaticClass());
-		return true;*/
+		return true;
 	}
 	return false;
 }
