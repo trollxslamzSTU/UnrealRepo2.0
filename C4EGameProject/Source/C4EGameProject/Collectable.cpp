@@ -1,4 +1,6 @@
 ﻿#include "Collectable.h"
+
+#include "GameRule_Score.h"
 #include "Components/SphereComponent.h"
 
 
@@ -12,6 +14,7 @@ ACollectable::ACollectable()
 void ACollectable::BroadcastCollected(AController* causer)
 {
 	OnCollected.Broadcast(this, causer, points);
+	_ScoreCard->Handle_CollectedScoring(points);
 	Destroy();
 }
 

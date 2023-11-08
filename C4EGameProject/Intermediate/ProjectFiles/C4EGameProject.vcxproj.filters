@@ -78,16 +78,58 @@
     <ClInclude Include="..\..\Source\C4EGameProject\C4EGameProjectProjectile.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\C4EPlayerController.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\C4EPlayerController.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Collectable.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Collectable.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\Fireable.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C4EGameProject\Fireable.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\GameRule.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\GameRule.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Collectables.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Collectables.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Targets.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Targets.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\HealthComponent.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\HealthComponent.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\MatchStateHandler.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C4EGameProject\MatchStateHandler.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Target.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Target.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\TP_PickUpComponent.cpp">
@@ -118,6 +160,12 @@
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C4EGameProject\Weapon_Projectile.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Widget_Score.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Widget_Score.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
   </ItemGroup>

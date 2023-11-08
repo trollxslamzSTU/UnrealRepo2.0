@@ -3,7 +3,9 @@
 #include "CoreMinimal.h"
 #include "Target.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FTargetDestroyedSignature, AActor*, target, AController*, delegateInstigator, int, points);
+class UGameRule_Score;
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FTargetDestroyedSignature, AActor*, target, AController*,
+                                               delegateInstigator, int, points);
 
 class UHealthComponent;
 
@@ -18,12 +20,15 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FTargetDestroyedSignature OnTargetDestroyed;
 
+	
 protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TObjectPtr<UHealthComponent> _HealthComp;
 
+	TObjectPtr<UGameRule_Score> _ScoreCard;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int PointsToAward;
 private:

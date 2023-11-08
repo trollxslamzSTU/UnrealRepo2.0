@@ -1,5 +1,5 @@
 ﻿#include "GameRule_Targets.h"
-
+#include "GameRule_Score.h"
 #include "Target.h"
 #include "Kismet/GameplayStatics.h"
 

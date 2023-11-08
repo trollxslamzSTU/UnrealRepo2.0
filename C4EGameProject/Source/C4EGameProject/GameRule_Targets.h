@@ -2,7 +2,6 @@
 
 #include "CoreMinimal.h"
 #include "GameRule.h"
-#include "UObject/Object.h"
 #include "GameRule_Targets.generated.h"
 
 class UTarget;

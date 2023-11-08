@@ -4,7 +4,10 @@
 #include "GameFramework/Actor.h"
 #include "Collectable.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FCollectedSignature, class ACollectable*, subject, AController*, causer, int, points);
+class UGameRule_Score;
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FCollectedSignature, class ACollectable*, subject, AController*, causer,
+                                               int, points);
+
 
 class USphereComponent;
 
@@ -23,6 +26,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TObjectPtr<USphereComponent> _SphereCollision;
 
+	TObjectPtr<UGameRule_Score> _ScoreCard;
+	
 	UFUNCTION(BlueprintCallable)
 	void BroadcastCollected(AController* causer);
 

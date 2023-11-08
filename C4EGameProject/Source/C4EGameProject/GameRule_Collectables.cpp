@@ -1,5 +1,6 @@
 ﻿#include "GameRule_Collectables.h"
 #include "Collectable.h"
+#include "GameRule_Score.h"
 #include "Kismet/GameplayStatics.h"
 
 UGameRule_Collectables::UGameRule_Collectables()

@@ -1,17 +1,21 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\collectable.cpp",
+        "Source": "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\collectable.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\c4egameprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "PCH": "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\c4egameprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
         "Includes": [
-            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\c4egameproject\\definitions.c4egameproject.h",
-            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\collectable.h",
-            "c:\\users\\ethan\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\collectable.generated.h",
-            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
-            "e:\\unreal\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
-            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
-            "e:\\unreal\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h"
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\c4egameproject\\definitions.c4egameproject.h",
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\collectable.h",
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\collectable.generated.h",
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\gamerule_score.h",
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\source\\c4egameproject\\gamerule.h",
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\gamerule.generated.h",
+            "c:\\users\\l021011n.student.001\\documents\\github\\unrealrepo2.0\\c4egameproject\\intermediate\\build\\win64\\unrealeditor\\inc\\c4egameproject\\uht\\gamerule_score.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
