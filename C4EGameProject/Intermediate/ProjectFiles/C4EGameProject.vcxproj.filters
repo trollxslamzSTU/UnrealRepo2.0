@@ -108,6 +108,12 @@
     <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Collectables.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Score.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Score.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Targets.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>

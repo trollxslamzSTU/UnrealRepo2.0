@@ -1,6 +1,5 @@
 ﻿#include "GameRule_Collectables.h"
 #include "Collectable.h"
-#include "GameRule_Score.h"
 #include "Kismet/GameplayStatics.h"
 
 UGameRule_Collectables::UGameRule_Collectables()
@@ -11,38 +10,24 @@ UGameRule_Collectables::UGameRule_Collectables()
 
 void UGameRule_Collectables::Init()
 {
-	if(_Collectables.Num() == 0)
-	{
-		TArray<AActor*> outActors;
-		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACollectable::StaticClass(), outActors);
-		for(AActor* actor : outActors)
-		{
-			_Collectables.Add(Cast<ACollectable>(actor));
-		}
-	}
-
-	_AmountRemaining = _Collectables.Num();
-	if(GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black,
-			FString::Printf(TEXT("Gamerule_Collectables: Found %d Collectables in world"), _AmountRemaining));
-	}
-	
-	for(ACollectable* collect : _Collectables)
-	{
-		collect->OnCollected.AddDynamic(this, &UGameRule_Collectables::Handle_Collected);
-	}
-	
 	Super::Init();
+	OnRegisterCollectable.BindDynamic(this, UGameRule_Collectables::Handle_RegisterCollectable);
 }
 
 void UGameRule_Collectables::Handle_Collected(ACollectable* subject, AController* causer, int PointsToAward)
 {
 	_AmountRemaining--;
+	subject->OnCollected.RemoveDynamic(this, &UGameRule_Collectables::Handle_Collected);
 	BroadcastGameRulePointsScored(causer, PointsToAward);
-
+	
 	if(_AmountRemaining == 0)
 	{
 		BroadcastGameRuleCompleted();
 	}
+}
+
+void UGameRule_Collectables::Handle_RegisterCollectable(ACollectable* collectable)
+{
+	collectable->OnCollected.AddUniqueDynamic(this, &UGameRule_Collectables::Handle_Collected);
+	_AmountRemaining++;
 }

@@ -2,13 +2,14 @@
 	"RemapUnityFiles": 
 	{
 		"Module.C4EGameProject.cpp.obj": [
+			"C4ECharacter.cpp.obj",
 			"C4EGameProject.cpp.obj",
 			"C4EGameProjectCharacter.cpp.obj",
 			"C4EGameProjectGameMode.cpp.obj",
 			"C4EGameProjectProjectile.cpp.obj",
-			"C4EPlayerController.cpp.obj",
 			"Fireable.cpp.obj",
 			"GameRule.cpp.obj",
+			"GameRule_Score.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"MatchStateHandler.cpp.obj",
 			"TP_PickUpComponent.cpp.obj",
@@ -17,6 +18,7 @@
 			"Weapon_Hitscan.cpp.obj",
 			"Weapon_Projectile.cpp.obj",
 			"Widget_Score.cpp.obj",
+			"C4EAIController.gen.cpp.obj",
 			"C4ECharacter.gen.cpp.obj",
 			"C4EGameProject.init.gen.cpp.obj",
 			"C4EGameProjectCharacter.gen.cpp.obj",
@@ -38,10 +40,10 @@
 			"Weapon_Hitscan.gen.cpp.obj",
 			"Weapon_Projectile.gen.cpp.obj",
 			"Widget_Score.gen.cpp.obj",
-			"C4ECharacter.cpp.obj",
+			"C4EAIController.cpp.obj",
+			"C4EPlayerController.cpp.obj",
 			"Collectable.cpp.obj",
 			"GameRule_Collectables.cpp.obj",
-			"GameRule_Score.cpp.obj",
 			"GameRule_Targets.cpp.obj",
 			"Target.cpp.obj"
 		]

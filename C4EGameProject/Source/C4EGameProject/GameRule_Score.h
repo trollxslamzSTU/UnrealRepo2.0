@@ -5,6 +5,8 @@
 #include "GameRule_Score.generated.h"
 
 
+class AC4EPlayerController;
+
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class C4EGAMEPROJECT_API UGameRule_Score : public UGameRule
 {
@@ -14,17 +16,14 @@ public:
 	UGameRule_Score();
 
 	virtual void Init() override;
+	void Init(AC4EPlayerController* pc);
 	UFUNCTION()
-	void Handle_CollectedScoring(int PointsToAward);
-	UFUNCTION()
-	void Handle_TargetScoring(int points);
+	void Handle_ScoreUpdated(int points);
+	
 protected:
-	UFUNCTION()
-	void Handle_Scoring(int points);
-	
-	
+
+	TObjectPtr<AC4EPlayerController> _PlayerController;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	int _PointsToWin;
-	int _TotalPoints;
 };

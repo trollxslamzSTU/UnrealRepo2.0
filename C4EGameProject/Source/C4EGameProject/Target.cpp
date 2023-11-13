@@ -1,11 +1,11 @@
 ﻿#include "Target.h"
 
-#include "GameRule_Score.h"
 #include "HealthComponent.h"
 
 UTarget::UTarget()
 {
 	PointsToAward = 5;
+	
 }
 
 void UTarget::BeginPlay()
@@ -29,6 +29,6 @@ void UTarget::BeginPlay()
 void UTarget::Handle_Dead(AController* causer)
 {
 	OnTargetDestroyed.Broadcast(GetOwner(), causer, PointsToAward);
-	_ScoreCard->Handle_TargetScoring(PointsToAward);
+
 	GetOwner()->Destroy();
 }

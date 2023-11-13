@@ -1,6 +1,6 @@
 ﻿#include "Collectable.h"
 
-#include "GameRule_Score.h"
+#include "GameRule_Collectables.h"
 #include "Components/SphereComponent.h"
 
 
@@ -11,10 +11,17 @@ ACollectable::ACollectable()
 	points = 3;
 }
 
+void ACollectable::BeginPlay()
+{
+	Super::BeginPlay();
+
+	UGameRule_Collectables::OnRegisterCollectable.ExecuteIfBound(this);
+}
+
 void ACollectable::BroadcastCollected(AController* causer)
 {
 	OnCollected.Broadcast(this, causer, points);
-	_ScoreCard->Handle_CollectedScoring(points);
+	
 	Destroy();
 }
 

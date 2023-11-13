@@ -9,6 +9,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 // Cross Module References
+	AIMODULE_API UClass* Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UMatchStateHandler_NoRegister();
@@ -133,6 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AC4EPlayerController_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UMatchStateHandler_NoRegister, (int32)VTABLE_OFFSET(AC4EPlayerController, IMatchStateHandler), false },  // 437658244
+			{ Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister, (int32)VTABLE_OFFSET(AC4EPlayerController, IGenericTeamAgentInterface), false },  // 3302830175
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AC4EPlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AC4EPlayerController>::IsAbstract,
@@ -166,15 +168,15 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AC4EPlayerController);
 	AC4EPlayerController::~AC4EPlayerController() {}
-	struct Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_001_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_001_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 3425735909U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 2145573087U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_001_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1039789817(TEXT("/Script/C4EGameProject"),
-		Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_001_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_001_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1809638129(TEXT("/Script/C4EGameProject"),
+		Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

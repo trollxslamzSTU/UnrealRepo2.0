@@ -2,6 +2,7 @@
 
 #include "C4ECharacter.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameRule_Score.h"
 #include "Widget_Score.h"
 #include "GameFramework/GameModeBase.h"
 #include "Kismet/GameplayStatics.h"
@@ -9,6 +10,8 @@
 AC4EPlayerController::AC4EPlayerController() : Super()
 {
 	_Score = 0;
+	_TeamID = FGenericTeamId(2);
+	
 }
 
 void AC4EPlayerController::Init_Implementation()
@@ -60,9 +63,18 @@ void AC4EPlayerController::Handle_End_Implementation()
 
 void AC4EPlayerController::AddScore(int Amount)
 {
+	
 	_Score += Amount;
+	OnScoreUpdated.Broadcast(_Score);
+	
 	if(_ScoreWidget != nullptr)
 	{
 		_ScoreWidget->UpdateScore(_Score);
 	}
 }
+
+FGenericTeamId AC4EPlayerController::GetGenericTeamId() const
+{
+	return IGenericTeamAgentInterface::GetGenericTeamId();
+}
+

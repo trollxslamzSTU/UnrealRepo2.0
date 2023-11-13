@@ -5,6 +5,7 @@
 #include "GameFramework/Character.h"
 #include "C4ECharacter.generated.h"
 
+
 class USceneComponent;
 class UInputAction;
 class UCameraComponent;
@@ -39,6 +40,7 @@ class C4EGAMEPROJECT_API AC4ECharacter : public ACharacter
 	
 public:
 	AC4ECharacter();
+
 	
 	UFUNCTION(BlueprintNativeEvent)
 	void Init();

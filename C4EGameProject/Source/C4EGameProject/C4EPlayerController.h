@@ -1,21 +1,26 @@
 ﻿#pragma once
 
 #include "CoreMinimal.h"
+#include "GenericTeamAgentInterface.h"
 #include "MatchStateHandler.h"
 #include "GameFramework/PlayerController.h"
 #include "C4EPlayerController.generated.h"
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FScoreUpdatedSignature, int, points);
 
 class UInputMappingContext;
 class UWidget_Score;
 
 UCLASS(Abstract)
-class C4EGAMEPROJECT_API AC4EPlayerController : public APlayerController, public IMatchStateHandler
+class C4EGAMEPROJECT_API AC4EPlayerController : public APlayerController, public IMatchStateHandler, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
 public:
 	AC4EPlayerController();
 
+	FScoreUpdatedSignature OnScoreUpdated;
+	
 	UFUNCTION(BlueprintNativeEvent)
 	void Init();
 
@@ -23,6 +28,8 @@ public:
 	virtual void Handle_End_Implementation() override;
 
 	void AddScore(int Amount);
+
+	virtual FGenericTeamId GetGenericTeamId() const override;
 	
 protected:
 	UPROPERTY(EditAnywhere)
@@ -35,6 +42,8 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
 	TObjectPtr<UInputMappingContext> DefaultMappingContext;
+	
+	FGenericTeamId _TeamID;
 	
 	int _Score;
 };

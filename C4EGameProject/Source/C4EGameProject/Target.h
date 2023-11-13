@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "Target.generated.h"
 
-class UGameRule_Score;
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FTargetDestroyedSignature, AActor*, target, AController*,
                                                delegateInstigator, int, points);
 
@@ -27,7 +27,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TObjectPtr<UHealthComponent> _HealthComp;
 
-	TObjectPtr<UGameRule_Score> _ScoreCard;
+	
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int PointsToAward;
