@@ -4,6 +4,7 @@
 #include "Components/SphereComponent.h"
 
 
+
 ACollectable::ACollectable()
 {
 	_SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("Collision"));
@@ -16,6 +17,7 @@ void ACollectable::BeginPlay()
 	Super::BeginPlay();
 
 	UGameRule_Collectables::OnRegisterCollectable.ExecuteIfBound(this);
+	
 }
 
 void ACollectable::BroadcastCollected(AController* causer)

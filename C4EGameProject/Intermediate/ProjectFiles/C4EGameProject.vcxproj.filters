@@ -45,6 +45,12 @@
     <Filter Include="Source\C4EGameProject">
       <UniqueIdentifier>{9DDBEFDB-DA79-35D4-995A-F5A31272E555}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\C4EGameProject\C4EAIController.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\C4EAIController.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\C4ECharacter.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>

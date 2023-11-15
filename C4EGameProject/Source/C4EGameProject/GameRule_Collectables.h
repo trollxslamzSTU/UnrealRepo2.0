@@ -6,7 +6,7 @@
 
 class ACollectable;
 
-DECLARE_DYNAMIC_DELEGATE_OneParam(FRegisterCollectableSignature, ACollectable*, collecatble);
+DECLARE_DYNAMIC_DELEGATE_OneParam(FRegisterCollectableSignature, ACollectable*, collectable);
 
 
 UCLASS(ClassGroup=(Custom), meta = (BlueprintSpawnableComponent))
@@ -16,12 +16,13 @@ class C4EGAMEPROJECT_API UGameRule_Collectables : public UGameRule
 
 public:
 	UGameRule_Collectables();
-
+	
 	static FRegisterCollectableSignature OnRegisterCollectable;
 	
 	virtual void Init() override;
 
 protected:
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<TObjectPtr<ACollectable>> _Collectables;
 

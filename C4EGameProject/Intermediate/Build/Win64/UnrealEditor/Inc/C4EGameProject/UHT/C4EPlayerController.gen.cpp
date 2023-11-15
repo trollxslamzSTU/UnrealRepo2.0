@@ -14,12 +14,55 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UMatchStateHandler_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UWidget_Score_NoRegister();
+	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_C4EGameProject();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics
+	{
+		struct _Script_C4EGameProject_eventScoreUpdatedSignature_Parms
+		{
+			int32 points;
+		};
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_points;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::NewProp_points = { "points", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_C4EGameProject_eventScoreUpdatedSignature_Parms, points), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::NewProp_points,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "C4EPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_C4EGameProject, nullptr, "ScoreUpdatedSignature__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::_Script_C4EGameProject_eventScoreUpdatedSignature_Parms), Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+void FScoreUpdatedSignature_DelegateWrapper(const FMulticastScriptDelegate& ScoreUpdatedSignature, int32 points)
+{
+	struct _Script_C4EGameProject_eventScoreUpdatedSignature_Parms
+	{
+		int32 points;
+	};
+	_Script_C4EGameProject_eventScoreUpdatedSignature_Parms Parms;
+	Parms.points=points;
+	ScoreUpdatedSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	DEFINE_FUNCTION(AC4EPlayerController::execInit)
 	{
 		P_FINISH;
@@ -168,15 +211,15 @@ void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AC4EPlayerController);
 	AC4EPlayerController::~AC4EPlayerController() {}
-	struct Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 2145573087U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1809638129(TEXT("/Script/C4EGameProject"),
-		Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1809638129(TEXT("/Script/C4EGameProject"),
+		Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
