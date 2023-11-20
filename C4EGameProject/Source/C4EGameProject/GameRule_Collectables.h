@@ -6,7 +6,7 @@
 
 class ACollectable;
 
-DECLARE_DYNAMIC_DELEGATE_OneParam(FRegisterCollectableSignature, ACollectable*, collecatble);
+DECLARE_DYNAMIC_DELEGATE_OneParam(FRegisterCollectableSignature, ACollectable*, collectable);
 
 
 UCLASS(ClassGroup=(Custom), meta = (BlueprintSpawnableComponent))

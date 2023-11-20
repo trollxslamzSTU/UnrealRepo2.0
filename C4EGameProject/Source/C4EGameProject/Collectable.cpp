@@ -4,11 +4,13 @@
 #include "Components/SphereComponent.h"
 
 
+
 ACollectable::ACollectable()
 {
 	_SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("Collision"));
 	RootComponent = _SphereCollision;
 	points = 3;
+	
 }
 
 void ACollectable::BeginPlay()

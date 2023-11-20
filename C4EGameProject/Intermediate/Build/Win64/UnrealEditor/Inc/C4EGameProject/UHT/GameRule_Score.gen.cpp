@@ -14,75 +14,25 @@ void EmptyLinkFunctionForGeneratedCodeGameRule_Score() {}
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UGameRule_Score_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_C4EGameProject();
 // End Cross Module References
-	DEFINE_FUNCTION(UGameRule_Score::execHandle_Scoring)
+	DEFINE_FUNCTION(UGameRule_Score::execHandle_ScoreUpdated)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_points);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->Handle_Scoring(Z_Param_points);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UGameRule_Score::execHandle_TargetScoring)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_points);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->Handle_TargetScoring(Z_Param_points);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UGameRule_Score::execHandle_CollectedScoring)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_PointsToAward);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->Handle_CollectedScoring(Z_Param_PointsToAward);
+		P_THIS->Handle_ScoreUpdated(Z_Param_points);
 		P_NATIVE_END;
 	}
 	void UGameRule_Score::StaticRegisterNativesUGameRule_Score()
 	{
 		UClass* Class = UGameRule_Score::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "Handle_CollectedScoring", &UGameRule_Score::execHandle_CollectedScoring },
-			{ "Handle_Scoring", &UGameRule_Score::execHandle_Scoring },
-			{ "Handle_TargetScoring", &UGameRule_Score::execHandle_TargetScoring },
+			{ "Handle_ScoreUpdated", &UGameRule_Score::execHandle_ScoreUpdated },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics
+	struct Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics
 	{
-		struct GameRule_Score_eventHandle_CollectedScoring_Parms
-		{
-			int32 PointsToAward;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_PointsToAward;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::NewProp_PointsToAward = { "PointsToAward", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GameRule_Score_eventHandle_CollectedScoring_Parms, PointsToAward), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::NewProp_PointsToAward,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "GameRule_Score.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGameRule_Score, nullptr, "Handle_CollectedScoring", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::GameRule_Score_eventHandle_CollectedScoring_Parms), Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics
-	{
-		struct GameRule_Score_eventHandle_Scoring_Parms
+		struct GameRule_Score_eventHandle_ScoreUpdated_Parms
 		{
 			int32 points;
 		};
@@ -93,54 +43,22 @@ void EmptyLinkFunctionForGeneratedCodeGameRule_Score() {}
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::NewProp_points = { "points", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GameRule_Score_eventHandle_Scoring_Parms, points), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::NewProp_points,
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::NewProp_points = { "points", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GameRule_Score_eventHandle_ScoreUpdated_Parms, points), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::NewProp_points,
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::Function_MetaDataParams[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "GameRule_Score.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGameRule_Score, nullptr, "Handle_Scoring", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::GameRule_Score_eventHandle_Scoring_Parms), Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UGameRule_Score_Handle_Scoring()
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGameRule_Score, nullptr, "Handle_ScoreUpdated", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::GameRule_Score_eventHandle_ScoreUpdated_Parms), Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGameRule_Score_Handle_Scoring_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics
-	{
-		struct GameRule_Score_eventHandle_TargetScoring_Parms
-		{
-			int32 points;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_points;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::NewProp_points = { "points", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GameRule_Score_eventHandle_TargetScoring_Parms, points), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::NewProp_points,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "GameRule_Score.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGameRule_Score, nullptr, "Handle_TargetScoring", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::GameRule_Score_eventHandle_TargetScoring_Parms), Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring_Statics::FuncParams);
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -169,9 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeGameRule_Score() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_C4EGameProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGameRule_Score_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UGameRule_Score_Handle_CollectedScoring, "Handle_CollectedScoring" }, // 2450405539
-		{ &Z_Construct_UFunction_UGameRule_Score_Handle_Scoring, "Handle_Scoring" }, // 1621216647
-		{ &Z_Construct_UFunction_UGameRule_Score_Handle_TargetScoring, "Handle_TargetScoring" }, // 273885688
+		{ &Z_Construct_UFunction_UGameRule_Score_Handle_ScoreUpdated, "Handle_ScoreUpdated" }, // 3326093492
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGameRule_Score_Statics::Class_MetaDataParams[] = {
@@ -223,15 +139,15 @@ void EmptyLinkFunctionForGeneratedCodeGameRule_Score() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGameRule_Score);
 	UGameRule_Score::~UGameRule_Score() {}
-	struct Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_004_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGameRule_Score, UGameRule_Score::StaticClass, TEXT("UGameRule_Score"), &Z_Registration_Info_UClass_UGameRule_Score, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameRule_Score), 1802717825U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_004_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UGameRule_Score, UGameRule_Score::StaticClass, TEXT("UGameRule_Score"), &Z_Registration_Info_UClass_UGameRule_Score, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameRule_Score), 2591930249U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_2455016799(TEXT("/Script/C4EGameProject"),
-		Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_003_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_004_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_726972099(TEXT("/Script/C4EGameProject"),
+		Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_004_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_STUDENT_004_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_Score_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

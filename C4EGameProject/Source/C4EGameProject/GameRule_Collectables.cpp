@@ -1,6 +1,6 @@
 ﻿#include "GameRule_Collectables.h"
 #include "Collectable.h"
-#include "Kismet/GameplayStatics.h"
+
 
 UGameRule_Collectables::UGameRule_Collectables()
 {
@@ -11,7 +11,7 @@ UGameRule_Collectables::UGameRule_Collectables()
 void UGameRule_Collectables::Init()
 {
 	Super::Init();
-	OnRegisterCollectable.BindDynamic(this, UGameRule_Collectables::Handle_RegisterCollectable);
+	//OnRegisterCollectable.BindDynamic(this, &UGameRule_Collectables::Handle_RegisterCollectable);
 }
 
 void UGameRule_Collectables::Handle_Collected(ACollectable* subject, AController* causer, int PointsToAward)
