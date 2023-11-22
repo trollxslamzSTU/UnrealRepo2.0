@@ -13,7 +13,6 @@ void EmptyLinkFunctionForGeneratedCodeC4EGameProject_init() {}
 	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_HealthComponentDamagedSignature__DelegateSignature();
 	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_HealthComponentDeadSignature__DelegateSignature();
 	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_OnPickUp__DelegateSignature();
-	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_RegisterCollectableSignature__DelegateSignature();
 	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature();
 	C4EGAMEPROJECT_API UFunction* Z_Construct_UDelegateFunction_C4EGameProject_TargetDestroyedSignature__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_C4EGameProject;
@@ -28,7 +27,6 @@ void EmptyLinkFunctionForGeneratedCodeC4EGameProject_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_C4EGameProject_HealthComponentDamagedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_C4EGameProject_HealthComponentDeadSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_C4EGameProject_OnPickUp__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_C4EGameProject_RegisterCollectableSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_C4EGameProject_ScoreUpdatedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_C4EGameProject_TargetDestroyedSignature__DelegateSignature,
 			};
@@ -37,13 +35,13 @@ void EmptyLinkFunctionForGeneratedCodeC4EGameProject_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xECB02419,
-				0xB971B142,
+				0xB8586F7E,
+				0x1BCF96A5,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_C4EGameProject.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_C4EGameProject.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_C4EGameProject(Z_Construct_UPackage__Script_C4EGameProject, TEXT("/Script/C4EGameProject"), Z_Registration_Info_UPackage__Script_C4EGameProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xECB02419, 0xB971B142));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_C4EGameProject(Z_Construct_UPackage__Script_C4EGameProject, TEXT("/Script/C4EGameProject"), Z_Registration_Info_UPackage__Script_C4EGameProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xB8586F7E, 0x1BCF96A5));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

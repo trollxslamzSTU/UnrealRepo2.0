@@ -16,7 +16,9 @@ public:
 	UGameRule_Score();
 
 	virtual void Init() override;
-	void Init(AC4EPlayerController* pc);
+	
+	void InitPC(AC4EPlayerController* pc);
+	
 	UFUNCTION()
 	void Handle_ScoreUpdated(int points);
 	

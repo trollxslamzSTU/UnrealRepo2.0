@@ -1,5 +1,6 @@
 ﻿#include "GameRule_Collectables.h"
 #include "Collectable.h"
+#include "Kismet/GameplayStatics.h"
 
 
 UGameRule_Collectables::UGameRule_Collectables()
@@ -10,8 +11,24 @@ UGameRule_Collectables::UGameRule_Collectables()
 
 void UGameRule_Collectables::Init()
 {
+	if(_Collectables.Num() == 0)
+	{
+		TArray<AActor*> OutActor;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(),ACollectable::StaticClass(), OutActor);
+		for(AActor* thing : OutActor)
+		{
+			_Collectables.Add(Cast<ACollectable>(thing));
+		}
+	}
+	
+	_AmountRemaining = _Collectables.Num();
+
+	for(ACollectable* collect : _Collectables)
+	{
+		collect->OnCollected.AddDynamic(this, &UGameRule_Collectables::Handle_Collected);
+	}
 	Super::Init();
-	//OnRegisterCollectable.BindDynamic(this, &UGameRule_Collectables::Handle_RegisterCollectable);
+	
 }
 
 void UGameRule_Collectables::Handle_Collected(ACollectable* subject, AController* causer, int PointsToAward)
@@ -26,8 +43,4 @@ void UGameRule_Collectables::Handle_Collected(ACollectable* subject, AController
 	}
 }
 
-void UGameRule_Collectables::Handle_RegisterCollectable(ACollectable* collectable)
-{
-	collectable->OnCollected.AddUniqueDynamic(this, &UGameRule_Collectables::Handle_Collected);
-	_AmountRemaining++;
-}
+

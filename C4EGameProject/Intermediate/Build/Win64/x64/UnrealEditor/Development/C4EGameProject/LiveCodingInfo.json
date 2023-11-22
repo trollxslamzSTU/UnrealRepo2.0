@@ -6,12 +6,9 @@
 			"C4ECharacter.cpp.obj",
 			"C4EGameProject.cpp.obj",
 			"C4EGameProjectCharacter.cpp.obj",
-			"C4EGameProjectGameMode.cpp.obj",
 			"C4EGameProjectProjectile.cpp.obj",
-			"C4EPlayerController.cpp.obj",
 			"Fireable.cpp.obj",
 			"GameRule.cpp.obj",
-			"GameRule_Score.cpp.obj",
 			"GameRule_Targets.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"MatchStateHandler.cpp.obj",
@@ -43,9 +40,14 @@
 			"Weapon_Base.gen.cpp.obj",
 			"Weapon_Hitscan.gen.cpp.obj",
 			"Weapon_Projectile.gen.cpp.obj",
+			"Weapon_Shoutgun_Hitscan.gen.cpp.obj",
 			"Widget_Score.gen.cpp.obj",
+			"C4EGameProjectGameMode.cpp.obj",
+			"C4EPlayerController.cpp.obj",
 			"Collectable.cpp.obj",
-			"GameRule_Collectables.cpp.obj"
+			"GameRule_Collectables.cpp.obj",
+			"GameRule_Score.cpp.obj",
+			"Weapon_Shoutgun_Hitscan.cpp.obj"
 		]
 	}
 }

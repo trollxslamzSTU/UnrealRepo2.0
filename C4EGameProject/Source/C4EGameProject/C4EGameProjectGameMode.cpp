@@ -3,6 +3,7 @@
 #include "C4EGameProjectGameMode.h"
 #include "C4EPlayerController.h"
 #include "GameRule.h"
+#include "GameRule_Collectables.h"
 #include "GameFramework/PlayerStart.h"
 #include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"

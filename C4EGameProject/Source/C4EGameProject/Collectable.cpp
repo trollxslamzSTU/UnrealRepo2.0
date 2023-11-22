@@ -16,8 +16,7 @@ ACollectable::ACollectable()
 void ACollectable::BeginPlay()
 {
 	Super::BeginPlay();
-
-	UGameRule_Collectables::OnRegisterCollectable.ExecuteIfBound(this);
+	
 }
 
 void ACollectable::BroadcastCollected(AController* causer)

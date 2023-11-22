@@ -66,7 +66,7 @@ void AC4EPlayerController::AddScore(int Amount)
 	
 	_Score += Amount;
 	OnScoreUpdated.Broadcast(_Score);
-	
+	UE_LOG(LogTemp, Warning, TEXT("CRY part 2"));
 	if(_ScoreWidget != nullptr)
 	{
 		_ScoreWidget->UpdateScore(_Score);
