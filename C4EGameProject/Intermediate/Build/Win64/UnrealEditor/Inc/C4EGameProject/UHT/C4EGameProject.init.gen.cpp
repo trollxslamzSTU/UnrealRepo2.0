@@ -35,13 +35,13 @@ void EmptyLinkFunctionForGeneratedCodeC4EGameProject_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xB8586F7E,
-				0x1BCF96A5,
+				0x93969F61,
+				0xBDF74022,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_C4EGameProject.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_C4EGameProject.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_C4EGameProject(Z_Construct_UPackage__Script_C4EGameProject, TEXT("/Script/C4EGameProject"), Z_Registration_Info_UPackage__Script_C4EGameProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xB8586F7E, 0x1BCF96A5));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_C4EGameProject(Z_Construct_UPackage__Script_C4EGameProject, TEXT("/Script/C4EGameProject"), Z_Registration_Info_UPackage__Script_C4EGameProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x93969F61, 0xBDF74022));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

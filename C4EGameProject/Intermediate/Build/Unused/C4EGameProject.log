@@ -1,0 +1,10 @@
+﻿  Using bundled DotNet SDK version: 6.0.302
+  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" C4EGameProjectEditor Win64 Development -Project="C:\Users\Ethan\Documents\GitHub\UnrealRepo2.0\C4EGameProject\C4EGameProject.uproject" -WaitMutex -FromMsBuild
+  Log file: C:\Users\Ethan\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Ethan\Documents\GitHub\UnrealRepo2.0).
+  Invalidating makefile for C4EGameProjectEditor (UHT files changed)
+  Parsing headers for C4EGameProjectEditor
+    Running Internal UnrealHeaderTool C:\Users\Ethan\Documents\GitHub\UnrealRepo2.0\C4EGameProject\C4EGameProject.uproject C:\Users\Ethan\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Intermediate\Build\Win64\C4EGameProjectEditor\Development\C4EGameProjectEditor.uhtmanifest -WarningsAsErrors -installed
+C:\Users\Ethan\Documents\GitHub\UnrealRepo2.0\C4EGameProject\Source\C4EGameProject\.h(1): error : Expected an include at the top of the header the follows all other includes: '#include ".generated.h"'
+  Total of 0 written
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_5.2\Engine\Build\BatchFiles\Build.bat" C4EGameProjectEditor Win64 Development -Project="C:\Users\Ethan\Documents\GitHub\UnrealRepo2.0\C4EGameProject\C4EGameProject.uproject" -WaitMutex -FromMsBuild" exited with code 6.
