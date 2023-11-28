@@ -1,4 +1,6 @@
 ﻿#include "GameRule_Targets.h"
+
+#include "C4EPlayerController.h"
 #include "Target.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -23,6 +25,8 @@ void UGameRule_Targets::Init()
 	for(UTarget* targets : _Targets)
 	{
 		targets->OnTargetDestroyed.AddDynamic(this, &UGameRule_Targets::Handle_TargetDestroyed);
+		AC4EPlayerController* character = Cast<AC4EPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+		character->SetInitTargets(_AmountRemaining);
 	}
 	Super::Init();
 }
@@ -31,7 +35,8 @@ void UGameRule_Targets::Handle_TargetDestroyed(AActor* target, AController* caus
 {
 	_AmountRemaining--;
 	BroadcastGameRulePointsScored(causer, points);
-
+	AC4EPlayerController* character = Cast<AC4EPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+	character->UpdateTargets(_AmountRemaining);
 	if(_AmountRemaining == 0)
 	{
 		BroadcastGameRuleCompleted();

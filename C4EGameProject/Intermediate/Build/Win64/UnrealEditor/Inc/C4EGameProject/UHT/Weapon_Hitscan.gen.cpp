@@ -12,6 +12,8 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AWeapon_Base();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AWeapon_Hitscan();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AWeapon_Hitscan_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
+	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_C4EGameProject();
 // End Cross Module References
 	void AWeapon_Hitscan::StaticRegisterNativesAWeapon_Hitscan()
@@ -36,6 +38,18 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__Range_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp__Range;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MuzzleFlash_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_MuzzleFlash;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Impact_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Impact;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Gunshot_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Gunshot;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -64,9 +78,33 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp__Range = { "_Range", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AWeapon_Hitscan, _Range), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp__Range_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp__Range_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_MuzzleFlash_MetaData[] = {
+		{ "Category", "Weapon_Hitscan" },
+		{ "ModuleRelativePath", "Weapon_Hitscan.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_MuzzleFlash = { "MuzzleFlash", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AWeapon_Hitscan, MuzzleFlash), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_MuzzleFlash_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_MuzzleFlash_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Impact_MetaData[] = {
+		{ "Category", "Weapon_Hitscan" },
+		{ "ModuleRelativePath", "Weapon_Hitscan.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Impact = { "Impact", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AWeapon_Hitscan, Impact), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Impact_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Impact_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Gunshot_MetaData[] = {
+		{ "Category", "Weapon_Hitscan" },
+		{ "ModuleRelativePath", "Weapon_Hitscan.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Gunshot = { "Gunshot", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AWeapon_Hitscan, Gunshot), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Gunshot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Gunshot_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Hitscan_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp__Damage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp__Range,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_MuzzleFlash,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Impact,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_Gunshot,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AWeapon_Hitscan_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWeapon_Hitscan>::IsAbstract,
@@ -100,15 +138,15 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWeapon_Hitscan);
 	AWeapon_Hitscan::~AWeapon_Hitscan() {}
-	struct Z_CompiledInDeferFile_FID_Users_Ethan_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics
+	struct Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ethan_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AWeapon_Hitscan, AWeapon_Hitscan::StaticClass, TEXT("AWeapon_Hitscan"), &Z_Registration_Info_UClass_AWeapon_Hitscan, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeapon_Hitscan), 325417881U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AWeapon_Hitscan, AWeapon_Hitscan::StaticClass, TEXT("AWeapon_Hitscan"), &Z_Registration_Info_UClass_AWeapon_Hitscan, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeapon_Hitscan), 2647037635U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Ethan_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_4237919809(TEXT("/Script/C4EGameProject"),
-		Z_CompiledInDeferFile_FID_Users_Ethan_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Ethan_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_3348001393(TEXT("/Script/C4EGameProject"),
+		Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_Weapon_Hitscan_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

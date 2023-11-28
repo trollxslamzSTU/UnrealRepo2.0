@@ -75,6 +75,7 @@ void AC4EGameProjectGameMode::Handle_GameRuleCompleted(UGameRule* rule)
 	if(_GameRulesLeft != 0){ return; }
 
 	EndMatch();
+	
 }
 
 void AC4EGameProjectGameMode::Handle_GameRulePointsScored(AController* scorer, int points)

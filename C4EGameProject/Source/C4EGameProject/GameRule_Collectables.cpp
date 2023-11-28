@@ -1,4 +1,6 @@
 ﻿#include "GameRule_Collectables.h"
+
+#include "C4EPlayerController.h"
 #include "Collectable.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -26,6 +28,8 @@ void UGameRule_Collectables::Init()
 	for(ACollectable* collect : _Collectables)
 	{
 		collect->OnCollected.AddDynamic(this, &UGameRule_Collectables::Handle_Collected);
+		AC4EPlayerController* character = Cast<AC4EPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+		character->SetInitCollectables(_AmountRemaining);
 	}
 	Super::Init();
 	
@@ -36,7 +40,8 @@ void UGameRule_Collectables::Handle_Collected(ACollectable* subject, AController
 	_AmountRemaining--;
 	subject->OnCollected.RemoveDynamic(this, &UGameRule_Collectables::Handle_Collected);
 	BroadcastGameRulePointsScored(causer, PointsToAward);
-	
+	AC4EPlayerController* character = Cast<AC4EPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+	character->UpdateCollectables(_AmountRemaining);
 	if(_AmountRemaining == 0)
 	{
 		BroadcastGameRuleCompleted();

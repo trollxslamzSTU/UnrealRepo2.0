@@ -2,8 +2,9 @@
 
 #include "C4ECharacter.h"
 #include "EnhancedInputSubsystems.h"
-#include "GameRule_Score.h"
+#include "Widget_Collectables.h"
 #include "Widget_Score.h"
+#include "Widget_Targets.h"
 #include "GameFramework/GameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -11,6 +12,8 @@ AC4EPlayerController::AC4EPlayerController() : Super()
 {
 	_Score = 0;
 	_TeamID = FGenericTeamId(2);
+	_Targets = 0;
+	_Collectables = 0;
 	
 }
 
@@ -30,6 +33,11 @@ void AC4EPlayerController::Init_Implementation()
 	{
 		_ScoreWidget = CreateWidget<UWidget_Score, AC4EPlayerController*>(this, _ScoreWidgetClass);
 		_ScoreWidget->AddToViewport();
+		_TargetWidget = CreateWidget<UWidget_Targets, AC4EPlayerController*>(this, _TargetWidgetClass);
+		_TargetWidget->AddToViewport();
+		_CollectablesWidget = CreateWidget<UWidget_Collectables, AC4EPlayerController*>(this, _CollectablesWidgetClass);
+		_CollectablesWidget->AddToViewport();
+		
 	}
 }
 
@@ -66,7 +74,6 @@ void AC4EPlayerController::AddScore(int Amount)
 	
 	_Score += Amount;
 	OnScoreUpdated.Broadcast(_Score);
-	UE_LOG(LogTemp, Warning, TEXT("CRY part 2"));
 	if(_ScoreWidget != nullptr)
 	{
 		_ScoreWidget->UpdateScore(_Score);
@@ -76,5 +83,41 @@ void AC4EPlayerController::AddScore(int Amount)
 FGenericTeamId AC4EPlayerController::GetGenericTeamId() const
 {
 	return IGenericTeamAgentInterface::GetGenericTeamId();
+}
+
+void AC4EPlayerController::SetInitTargets(int Targets)
+{
+	_Targets = Targets;
+	if(_TargetWidget != nullptr)
+	{
+		_TargetWidget->UpdateTargets(_Targets);
+	}
+}
+
+void AC4EPlayerController::SetInitCollectables(int Collectables)
+{
+	_Collectables = Collectables;
+	if(_CollectablesWidget != nullptr)
+	{
+		_CollectablesWidget->UpdateCollectables(_Collectables);
+	}
+}
+
+void AC4EPlayerController::UpdateTargets(int TarIn)
+{
+	_Targets = TarIn;
+	if(_TargetWidget != nullptr)
+	{
+		_TargetWidget->UpdateTargets(_Targets);
+	}
+}
+
+void AC4EPlayerController::UpdateCollectables(int ColIn)
+{
+	_Collectables = ColIn;
+	if(_CollectablesWidget != nullptr)
+	{
+		_CollectablesWidget->UpdateCollectables(_Collectables);
+	}
 }
 
