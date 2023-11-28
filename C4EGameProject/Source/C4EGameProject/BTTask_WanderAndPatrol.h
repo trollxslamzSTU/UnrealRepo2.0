@@ -7,7 +7,7 @@
 #include "BTTask_WanderAndPatrol.generated.h"
 
 
-UCLASS(Abstract)
+UCLASS()
 class C4EGAMEPROJECT_API UBTTask_WanderAndPatrol : public UBTTask_BlackboardBase 
 {
 	GENERATED_BODY()
@@ -16,6 +16,7 @@ public:
 	UBTTask_WanderAndPatrol();
 
 private:
+	
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	virtual FString GetStaticDescription() const override;
 

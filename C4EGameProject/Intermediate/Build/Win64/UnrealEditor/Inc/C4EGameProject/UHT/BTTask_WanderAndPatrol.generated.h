@@ -23,7 +23,7 @@ private: \
 	static void StaticRegisterNativesUBTTask_WanderAndPatrol(); \
 	friend struct Z_Construct_UClass_UBTTask_WanderAndPatrol_Statics; \
 public: \
-	DECLARE_CLASS(UBTTask_WanderAndPatrol, UBTTask_BlackboardBase, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/C4EGameProject"), NO_API) \
+	DECLARE_CLASS(UBTTask_WanderAndPatrol, UBTTask_BlackboardBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/C4EGameProject"), NO_API) \
 	DECLARE_SERIALIZER(UBTTask_WanderAndPatrol)
 
 
@@ -32,14 +32,14 @@ private: \
 	static void StaticRegisterNativesUBTTask_WanderAndPatrol(); \
 	friend struct Z_Construct_UClass_UBTTask_WanderAndPatrol_Statics; \
 public: \
-	DECLARE_CLASS(UBTTask_WanderAndPatrol, UBTTask_BlackboardBase, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/C4EGameProject"), NO_API) \
+	DECLARE_CLASS(UBTTask_WanderAndPatrol, UBTTask_BlackboardBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/C4EGameProject"), NO_API) \
 	DECLARE_SERIALIZER(UBTTask_WanderAndPatrol)
 
 
 #define FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_BTTask_WanderAndPatrol_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBTTask_WanderAndPatrol(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTTask_WanderAndPatrol) \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTTask_WanderAndPatrol) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBTTask_WanderAndPatrol); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTTask_WanderAndPatrol); \
 private: \
@@ -58,7 +58,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBTTask_WanderAndPatrol); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTTask_WanderAndPatrol); \
-	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(UBTTask_WanderAndPatrol) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTTask_WanderAndPatrol) \
 	NO_API virtual ~UBTTask_WanderAndPatrol();
 
 
