@@ -9,6 +9,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeC4EPlayerController() {}
 // Cross Module References
+	AIMODULE_API UClass* Z_Construct_UClass_UAIPerceptionStimuliSourceComponent_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4EPlayerController_NoRegister();
@@ -139,6 +140,10 @@ void FScoreUpdatedSignature_DelegateWrapper(const FMulticastScriptDelegate& Scor
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_DefaultMappingContext;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__SeeThisAI_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp__SeeThisAI;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -194,12 +199,21 @@ void FScoreUpdatedSignature_DelegateWrapper(const FMulticastScriptDelegate& Scor
 	};
 #endif
 	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0024080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4EPlayerController, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__SeeThisAI_MetaData[] = {
+		{ "Category", "C4EPlayerController" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "C4EPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__SeeThisAI = { "_SeeThisAI", nullptr, (EPropertyFlags)0x002408000008000d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4EPlayerController, _SeeThisAI), Z_Construct_UClass_UAIPerceptionStimuliSourceComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__SeeThisAI_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__SeeThisAI_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AC4EPlayerController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__PawnToSpawn,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__ScoreWidgetClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__TargetWidgetClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__CollectablesWidgetClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp_DefaultMappingContext,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4EPlayerController_Statics::NewProp__SeeThisAI,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AC4EPlayerController_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UMatchStateHandler_NoRegister, (int32)VTABLE_OFFSET(AC4EPlayerController, IMatchStateHandler), false },  // 437658244
@@ -242,9 +256,9 @@ void FScoreUpdatedSignature_DelegateWrapper(const FMulticastScriptDelegate& Scor
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 3168610043U) },
+		{ Z_Construct_UClass_AC4EPlayerController, AC4EPlayerController::StaticClass, TEXT("AC4EPlayerController"), &Z_Registration_Info_UClass_AC4EPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4EPlayerController), 1221408188U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_1188660746(TEXT("/Script/C4EGameProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_106988429(TEXT("/Script/C4EGameProject"),
 		Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4EPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

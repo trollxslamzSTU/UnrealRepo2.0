@@ -7,13 +7,16 @@
 #include "Widget_Targets.h"
 #include "GameFramework/GameModeBase.h"
 #include "Kismet/GameplayStatics.h"
+#include "Perception/AIPerceptionStimuliSourceComponent.h"
+#include "Perception/AISense_Sight.h"
 
 AC4EPlayerController::AC4EPlayerController() : Super()
 {
 	_Score = 0;
-	_TeamID = FGenericTeamId(2);
 	_Targets = 0;
 	_Collectables = 0;
+	_SeeThisAI = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("AI Sight Stimuli"));
+	
 	
 }
 
@@ -82,7 +85,7 @@ void AC4EPlayerController::AddScore(int Amount)
 
 FGenericTeamId AC4EPlayerController::GetGenericTeamId() const
 {
-	return IGenericTeamAgentInterface::GetGenericTeamId();
+	return _TeamID;
 }
 
 void AC4EPlayerController::SetInitTargets(int Targets)

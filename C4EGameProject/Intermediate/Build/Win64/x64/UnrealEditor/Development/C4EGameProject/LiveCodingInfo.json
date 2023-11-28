@@ -2,16 +2,13 @@
 	"RemapUnityFiles": 
 	{
 		"Module.C4EGameProject.cpp.obj": [
-			"AiControllerEnemy.gen.cpp.obj",
 			"BTTask_WanderAndPatrol.gen.cpp.obj",
 			"BTT_WanderAndPatrol.gen.cpp.obj",
 			"C4EAIController.gen.cpp.obj",
 			"C4ECharacter.gen.cpp.obj",
-			"C4EGameProject.init.gen.cpp.obj",
 			"C4EGameProjectCharacter.gen.cpp.obj",
 			"C4EGameProjectGameMode.gen.cpp.obj",
 			"C4EGameProjectProjectile.gen.cpp.obj",
-			"C4EPlayerController.gen.cpp.obj",
 			"Collectable.gen.cpp.obj",
 			"Fireable.gen.cpp.obj",
 			"GameRule.gen.cpp.obj",
@@ -31,7 +28,7 @@
 			"Widget_Collectables.gen.cpp.obj",
 			"Widget_Score.gen.cpp.obj",
 			"Widget_Targets.gen.cpp.obj",
-			"AiControllerEnemy.cpp.obj",
+			"BTTask_WanderAndPatrol.cpp.obj",
 			"BTT_WanderAndPatrol.cpp.obj",
 			"C4EAIController.cpp.obj",
 			"C4ECharacter.cpp.obj",
@@ -39,7 +36,6 @@
 			"C4EGameProjectCharacter.cpp.obj",
 			"C4EGameProjectGameMode.cpp.obj",
 			"C4EGameProjectProjectile.cpp.obj",
-			"C4EPlayerController.cpp.obj",
 			"Collectable.cpp.obj",
 			"Fireable.cpp.obj",
 			"GameRule.cpp.obj",
@@ -59,7 +55,13 @@
 			"Widget_Collectables.cpp.obj",
 			"Widget_Score.cpp.obj",
 			"Widget_Targets.cpp.obj",
-			"BTTask_WanderAndPatrol.cpp.obj"
+			"AiControllerEnemy.gen.cpp.obj",
+			"C4ECharacterAI.gen.cpp.obj",
+			"C4EGameProject.init.gen.cpp.obj",
+			"C4EPlayerController.gen.cpp.obj",
+			"AiControllerEnemy.cpp.obj",
+			"C4ECharacterAI.cpp.obj",
+			"C4EPlayerController.cpp.obj"
 		]
 	}
 }

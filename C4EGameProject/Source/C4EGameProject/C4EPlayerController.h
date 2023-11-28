@@ -10,6 +10,7 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FScoreUpdatedSignature, int, points);
 
+class UAIPerceptionStimuliSourceComponent;
 class UWidget_Collectables;
 class UInputMappingContext;
 class UWidget_Score;
@@ -58,8 +59,11 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess="true"))
 	TObjectPtr<UInputMappingContext> DefaultMappingContext;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TObjectPtr<UAIPerceptionStimuliSourceComponent> _SeeThisAI;
 	
-	FGenericTeamId _TeamID;
+	FGenericTeamId _TeamID = FGenericTeamId(2);
 
 	int _Targets;
 	int _Collectables;
