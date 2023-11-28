@@ -8,7 +8,7 @@
 
 
 UCLASS(Abstract)
-class C4EGAMEPROJECT_API UBTTask_WanderAndPatrol : public UBTTask_BlackboardBase
+class C4EGAMEPROJECT_API UBTTask_WanderAndPatrol : public UBTTask_BlackboardBase 
 {
 	GENERATED_BODY()
 

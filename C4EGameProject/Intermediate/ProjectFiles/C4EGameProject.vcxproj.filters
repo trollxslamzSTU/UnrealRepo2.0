@@ -45,7 +45,22 @@
     <Filter Include="Source\C4EGameProject">
       <UniqueIdentifier>{9DDBEFDB-DA79-35D4-995A-F5A31272E555}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\C4EGameProject\.h">
+    <ClCompile Include="..\..\Source\C4EGameProject\AiControllerEnemy.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\AiControllerEnemy.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\BTTask_WanderAndPatrol.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\BTTask_WanderAndPatrol.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\BTT_WanderAndPatrol.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\BTT_WanderAndPatrol.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\C4EAIController.cpp">
@@ -117,10 +132,10 @@
     <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Collectables.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Score.cpp">
+    <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Scored.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Score.h">
+    <ClInclude Include="..\..\Source\C4EGameProject\GameRule_Scored.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\GameRule_Targets.cpp">
@@ -177,11 +192,41 @@
     <ClInclude Include="..\..\Source\C4EGameProject\Weapon_Projectile.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Widget_Collectables.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Widget_Collectables.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\Widget_Score.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C4EGameProject\Widget_Score.h">
       <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\Widget_Targets.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\Widget_Targets.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\C4EGameProject\TP_ThirdPerson">
+      <UniqueIdentifier>{8D352C7E-BA23-31C5-9ACB-421A838270A1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\C4EGameProject\TP_ThirdPerson\TP_ThirdPerson.h">
+      <Filter>Source\C4EGameProject\TP_ThirdPerson</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\TP_ThirdPerson\TP_ThirdPersonCharacter.cpp">
+      <Filter>Source\C4EGameProject\TP_ThirdPerson</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\TP_ThirdPerson\TP_ThirdPersonCharacter.h">
+      <Filter>Source\C4EGameProject\TP_ThirdPerson</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\TP_ThirdPerson\TP_ThirdPersonGameMode.cpp">
+      <Filter>Source\C4EGameProject\TP_ThirdPerson</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\TP_ThirdPerson\TP_ThirdPersonGameMode.h">
+      <Filter>Source\C4EGameProject\TP_ThirdPerson</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

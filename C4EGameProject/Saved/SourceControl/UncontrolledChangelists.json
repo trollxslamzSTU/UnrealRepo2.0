@@ -5,6 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/l021011n/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/AI/BT_Enemy.uasset",
+				"C:/Users/l021011n/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/l021011n/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/B/MW/WFA0HPOV3LBOSHV7F6APXN.uasset",
+				"C:/Users/l021011n/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_GameMode.uasset",
+				"C:/Users/l021011n/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_C4ECharacterAI.uasset",
 				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_WeaponProjectile.uasset",
 				"C:/Users/Ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/BP_C4ECharacter.uasset",
 				"C:/Users/ethan/Documents/GitHub/UnrealRepo2.0/C4EGameProject/Content/FirstPerson/Input/IMC_Default.uasset",

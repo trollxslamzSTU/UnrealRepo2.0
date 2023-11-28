@@ -14,6 +14,8 @@ UBTTask_WanderAndPatrol::UBTTask_WanderAndPatrol()
 
 EBTNodeResult::Type UBTTask_WanderAndPatrol::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+	Super::ExecuteTask(OwnerComp, NodeMemory);
+	
 	FNavLocation Location{};
 
 	AAIController* controller {OwnerComp.GetAIOwner()};
