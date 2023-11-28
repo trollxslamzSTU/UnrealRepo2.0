@@ -5,7 +5,7 @@
 #include "GameFramework/Character.h"
 #include "C4ECharacterAI.generated.h"
 
-
+class UTarget;
 class USceneComponent;
 class UInputAction;
 class UCameraComponent;
@@ -42,7 +42,7 @@ public:
 	AC4ECharacterAI();
 
 	virtual void BeginPlay() override;
-
+	void Shoot();
 	
 protected:
 	
@@ -52,10 +52,13 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapon")
 	TObjectPtr<AActor> _FireableRef;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TObjectPtr<UTarget> _TargetComp;
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
-	void Shoot();
+	
 	
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };

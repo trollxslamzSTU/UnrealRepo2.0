@@ -234,15 +234,15 @@ void FGameRulePointsScoredSignature_DelegateWrapper(const FMulticastScriptDelega
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGameRule);
 	UGameRule::~UGameRule() {}
-	struct Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics
+	struct Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_UGameRule, UGameRule::StaticClass, TEXT("UGameRule"), &Z_Registration_Info_UClass_UGameRule, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameRule), 110070493U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_h_4258870953(TEXT("/Script/C4EGameProject"),
-		Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_GameRule_h_4258870953(TEXT("/Script/C4EGameProject"),
+		Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_GameRule_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

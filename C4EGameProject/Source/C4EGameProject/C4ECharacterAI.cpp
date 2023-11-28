@@ -6,6 +6,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "EnhancedInputSubsystems.h"
+#include "Target.h"
 #include "Weapon_Base.h"
 
 
@@ -19,6 +20,9 @@ AC4ECharacterAI::AC4ECharacterAI()
 
 	_WeaponAttachPoint = CreateDefaultSubobject<USceneComponent>(TEXT("AttachPoint"));
 	_WeaponAttachPoint->SetupAttachment(_Camera);
+
+	
+	
 }
 
 void AC4ECharacterAI::BeginPlay()
@@ -35,6 +39,7 @@ void AC4ECharacterAI::BeginPlay()
 		{
 			_FireableRef = spawnedGun;
 		}
+		
 	}
 }
 

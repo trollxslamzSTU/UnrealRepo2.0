@@ -6,6 +6,7 @@
 #include "C4ECharacter.generated.h"
 
 
+class UTarget;
 class USceneComponent;
 class UInputAction;
 class UCameraComponent;
@@ -53,6 +54,8 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapon")
 	TObjectPtr<AActor> _FireableRef;
+
+
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);

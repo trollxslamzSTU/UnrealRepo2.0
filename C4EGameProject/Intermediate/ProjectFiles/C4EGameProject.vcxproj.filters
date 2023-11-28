@@ -75,6 +75,12 @@
     <ClInclude Include="..\..\Source\C4EGameProject\C4ECharacter.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\C4ECharacterAI.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\C4ECharacterAI.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\C4EGameProject\C4EGameProject.Build.cs">
       <Filter>Source\C4EGameProject</Filter>
     </None>

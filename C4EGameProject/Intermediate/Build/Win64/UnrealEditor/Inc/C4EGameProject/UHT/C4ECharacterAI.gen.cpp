@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacterAI() {}
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4ECharacterAI();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AC4ECharacterAI_NoRegister();
 	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_AWeapon_Base_NoRegister();
+	C4EGAMEPROJECT_API UClass* Z_Construct_UClass_UTarget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
@@ -71,6 +72,10 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacterAI() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__FireableRef_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp__FireableRef;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__TargetComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp__TargetComp;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -158,6 +163,14 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacterAI() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__FireableRef = { "_FireableRef", nullptr, (EPropertyFlags)0x0024080000020015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4ECharacterAI, _FireableRef), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__FireableRef_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__FireableRef_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__TargetComp_MetaData[] = {
+		{ "Category", "C4ECharacterAI" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "C4ECharacterAI.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__TargetComp = { "_TargetComp", nullptr, (EPropertyFlags)0x002408000008000d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AC4ECharacterAI, _TargetComp), Z_Construct_UClass_UTarget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__TargetComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__TargetComp_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AC4ECharacterAI_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__Camera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__WeaponAttachPoint,
@@ -168,6 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacterAI() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__DefaultWeapon,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__FireableRef,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC4ECharacterAI_Statics::NewProp__TargetComp,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AC4ECharacterAI_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AC4ECharacterAI>::IsAbstract,
@@ -201,15 +215,15 @@ void EmptyLinkFunctionForGeneratedCodeC4ECharacterAI() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AC4ECharacterAI);
 	AC4ECharacterAI::~AC4ECharacterAI() {}
-	struct Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics
+	struct Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AC4ECharacterAI, AC4ECharacterAI::StaticClass, TEXT("AC4ECharacterAI"), &Z_Registration_Info_UClass_AC4ECharacterAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4ECharacterAI), 2194560687U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AC4ECharacterAI, AC4ECharacterAI::StaticClass, TEXT("AC4ECharacterAI"), &Z_Registration_Info_UClass_AC4ECharacterAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AC4ECharacterAI), 2284470404U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_4128144386(TEXT("/Script/C4EGameProject"),
-		Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_l021011n_Documents_GitHub_UnrealRepo2_0_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_2878294471(TEXT("/Script/C4EGameProject"),
+		Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_C4EGameProject_Source_C4EGameProject_C4ECharacterAI_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
