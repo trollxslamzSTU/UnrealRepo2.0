@@ -9,7 +9,7 @@ ACollectable::ACollectable()
 {
 	_SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("Collision"));
 	RootComponent = _SphereCollision;
-	points = 3;
+	points = 5;
 	
 }
 

@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeC4EGameProject_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xBCF67697,
+				0xCDB780AD,
 				0xEEAC74BB,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -43,5 +43,5 @@ void EmptyLinkFunctionForGeneratedCodeC4EGameProject_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_C4EGameProject.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_C4EGameProject(Z_Construct_UPackage__Script_C4EGameProject, TEXT("/Script/C4EGameProject"), Z_Registration_Info_UPackage__Script_C4EGameProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBCF67697, 0xEEAC74BB));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_C4EGameProject(Z_Construct_UPackage__Script_C4EGameProject, TEXT("/Script/C4EGameProject"), Z_Registration_Info_UPackage__Script_C4EGameProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xCDB780AD, 0xEEAC74BB));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

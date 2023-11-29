@@ -51,6 +51,24 @@
     <ClInclude Include="..\..\Source\C4EGameProject\AiControllerEnemy.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\BTService_UpdatePlayerLocation.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\BTService_UpdatePlayerLocation.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\BTTask_ClearBlackBoardValue.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\BTTask_ClearBlackBoardValue.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\BTTask_Shoot.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\BTTask_Shoot.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\BTTask_WanderAndPatrol.cpp">
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
@@ -178,6 +196,12 @@
       <Filter>Source\C4EGameProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C4EGameProject\TP_WeaponComponent.h">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C4EGameProject\UBTService_PlayerLocationUpdateIfSeen.cpp">
+      <Filter>Source\C4EGameProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C4EGameProject\UBTService_PlayerLocationUpdateIfSeen.h">
       <Filter>Source\C4EGameProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\C4EGameProject\Weapon_Base.cpp">

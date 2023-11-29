@@ -4,7 +4,7 @@
 
 UTarget::UTarget()
 {
-	PointsToAward = 5;
+	PointsToAward = 15;
 	
 }
 
@@ -29,6 +29,7 @@ void UTarget::BeginPlay()
 void UTarget::Handle_Dead(AController* causer)
 {
 	OnTargetDestroyed.Broadcast(GetOwner(), causer, PointsToAward);
+
 	
 	GetOwner()->Destroy();
 }

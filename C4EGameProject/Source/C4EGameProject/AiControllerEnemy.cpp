@@ -75,11 +75,6 @@ void AAiControllerEnemy::Handle_TargetPerceptionUpdated(AActor* Actor, FAIStimul
 	{
 	case 0:
 		this->GetBlackboardComponent()->SetValueAsBool("CanSeePlayer", true);
-		
-		if(GEngine)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("State Changed to: %d"), this->GetBlackboardComponent()->GetValueAsBool("CanSeePlayer")));
-		}
 	default:
 	 return;
 	}

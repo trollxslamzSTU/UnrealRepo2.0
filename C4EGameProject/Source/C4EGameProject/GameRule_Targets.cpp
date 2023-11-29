@@ -22,6 +22,7 @@ void UGameRule_Targets::Init()
 	}
 
 	_AmountRemaining = _Targets.Num();
+	
 	for(UTarget* targets : _Targets)
 	{
 		targets->OnTargetDestroyed.AddDynamic(this, &UGameRule_Targets::Handle_TargetDestroyed);

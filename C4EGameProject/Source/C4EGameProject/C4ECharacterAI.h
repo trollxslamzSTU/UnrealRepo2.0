@@ -43,7 +43,8 @@ public:
 
 	virtual void BeginPlay() override;
 	void Shoot();
-	
+
+	virtual void Destroyed() override;
 protected:
 	
 

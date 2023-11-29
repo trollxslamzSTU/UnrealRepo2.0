@@ -2,26 +2,29 @@
 	"RemapUnityFiles": 
 	{
 		"Module.C4EGameProject.cpp.obj": [
+			"BTService_UpdatePlayerLocation.cpp.obj",
+			"BTTask_ClearBlackBoardValue.cpp.obj",
+			"BTTask_Shoot.cpp.obj",
 			"BTTask_WanderAndPatrol.cpp.obj",
 			"BTT_WanderAndPatrol.cpp.obj",
 			"C4EAIController.cpp.obj",
+			"C4ECharacter.cpp.obj",
 			"C4EGameProject.cpp.obj",
 			"C4EGameProjectCharacter.cpp.obj",
 			"C4EGameProjectGameMode.cpp.obj",
 			"C4EGameProjectProjectile.cpp.obj",
 			"C4EPlayerController.cpp.obj",
-			"Collectable.cpp.obj",
 			"Fireable.cpp.obj",
 			"GameRule.cpp.obj",
 			"GameRule_Collectables.cpp.obj",
 			"GameRule_Scored.cpp.obj",
-			"GameRule_Targets.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"MatchStateHandler.cpp.obj",
 			"TP_PickUpComponent.cpp.obj",
 			"TP_ThirdPersonCharacter.cpp.obj",
 			"TP_ThirdPersonGameMode.cpp.obj",
 			"TP_WeaponComponent.cpp.obj",
+			"UBTService_PlayerLocationUpdateIfSeen.cpp.obj",
 			"Weapon_Base.cpp.obj",
 			"Weapon_Hitscan.cpp.obj",
 			"Weapon_Projectile.cpp.obj",
@@ -63,13 +66,10 @@
 			"Widget_Score.gen.cpp.obj",
 			"Widget_Targets.gen.cpp.obj",
 			"AiControllerEnemy.cpp.obj",
-			"BTService_UpdatePlayerLocation.cpp.obj",
-			"BTTask_ClearBlackBoardValue.cpp.obj",
-			"BTTask_Shoot.cpp.obj",
-			"C4ECharacter.cpp.obj",
 			"C4ECharacterAI.cpp.obj",
-			"Target.cpp.obj",
-			"UBTService_PlayerLocationUpdateIfSeen.cpp.obj"
+			"Collectable.cpp.obj",
+			"GameRule_Targets.cpp.obj",
+			"Target.cpp.obj"
 		]
 	}
 }

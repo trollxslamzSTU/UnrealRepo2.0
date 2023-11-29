@@ -35,6 +35,7 @@ void AC4ECharacterAI::BeginPlay()
 		spawnParams.Instigator = this;
 		TObjectPtr<AActor> spawnedGun = GetWorld()->SpawnActor(_DefaultWeapon, &_WeaponAttachPoint->GetComponentTransform(), spawnParams);
 		spawnedGun->AttachToComponent(_WeaponAttachPoint, FAttachmentTransformRules::SnapToTargetIncludingScale);
+		//spawnedGun->SetActorTransform()
 		if(UKismetSystemLibrary::DoesImplementInterface(spawnedGun, UFireable::StaticClass()))
 		{
 			_FireableRef = spawnedGun;
@@ -72,6 +73,13 @@ void AC4ECharacterAI::Shoot()
 	{
 		IFireable::Execute_Fire(_FireableRef);
 	}
+}
+
+void AC4ECharacterAI::Destroyed()
+{
+	Super::Destroyed();
+
+	_FireableRef->Destroy();
 }
 
 void AC4ECharacterAI::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
